@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import '../../widgets/navigation_drawer.dart';
+import '../../router/app_router.dart';
 
 class SoundPage extends StatefulWidget {
   final String title;
@@ -20,7 +21,7 @@ class _SoundPageState extends State<SoundPage> {
               padding: EdgeInsets.only(right: 20),
               child: GestureDetector(
                 onTap: () {
-                  Navigator.of(context).pushNamed('/sound/add');
+                  Navigator.of(context).pushNamed(AppRouter.add_sound);
                 },
                 child: Icon(Icons.add),
               ),

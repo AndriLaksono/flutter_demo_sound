@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import '../../core/constants/strings.dart';
+import '../router/app_router.dart';
 
 class NavigationDrawer extends StatelessWidget {
   @override
@@ -20,7 +21,7 @@ class NavigationDrawer extends StatelessWidget {
             title: Text('Home'),
             onTap: () {
               Navigator.pop(context);
-              Navigator.of(context).pushReplacementNamed('/');
+              Navigator.of(context).pushReplacementNamed(AppRouter.home);
             },
           ),
           ListTile(
@@ -28,7 +29,7 @@ class NavigationDrawer extends StatelessWidget {
             title: Text('Sound'),
             onTap: () {
               Navigator.pop(context);
-              Navigator.of(context).pushReplacementNamed('/sound');
+              Navigator.of(context).pushReplacementNamed(AppRouter.sound);
             },
           )
         ],

@@ -13,6 +13,7 @@ class AppRouter {
   const AppRouter._();
 
   static Route<dynamic> onGenerateRoute(RouteSettings settings) {
+    // args is data parameter if we want pass data to other screen
     final args = settings.arguments;
     switch (settings.name) {
       case home:
